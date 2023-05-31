@@ -7,6 +7,7 @@
     <!-- Titulo de la pagina Barra superior-->
     <title>Encriptador de Texto</title>
     <!--Referencias a otro archivos-->
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <!--  -->
 
@@ -35,13 +36,18 @@
         </div>
     
     <!-- Segundo Bloque Der -->
-        <div class="encriptado">
-            <img src="Imagenes/Muñeco.png" alt="" id="muñeco">
+        <div class="encriptado">       
+                <textarea  readonly name="mensaje" class="mensaje" id="msg"  cols="20" rows="10" placeholder=""></textarea>
+                <!--boton de copiar-->
+                <button id="btnCopy" class="copiar" onclick="copiar()">Copiar</button>
+            
+            <img class="muñeco" src="Imagenes/Muñeco.png" alt="" id="muñeco">
             <div class="mensaje-encriptado" id="mensaje-encriptado">
                 <h2 id="titulo-mensaje">Ningun mensaje fue encontrado</h2>
                 <p id="parrafo">Ingresa el texto que deseas encriptar o dessencriptar</p>
                 <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
             </div>
+            
         </div>
     
 
